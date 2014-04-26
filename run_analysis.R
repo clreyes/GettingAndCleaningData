@@ -13,7 +13,7 @@ train.subject <- read.table("train/subject_train.txt",header=F)
 names(train.subject) <- "Subject"
 # prep train dataset
 train<-cbind(train.subject,train.x,train.y)
-# remove object no longer needed
+# remove objects no longer needed
 rm(list=c("train.x","train.y","train.subject"))
 
 # load test set
@@ -26,7 +26,7 @@ test.subject <- read.table("test/subject_test.txt",header=F)
 names(test.subject) <- "Subject"
 # prep test dataset
 test<-cbind(test.subject,test.x,test.y)
-# remove object no longer needed
+# remove objects no longer needed
 rm(list=c("test.x","test.y","test.subject"))
 
 # merge training and test sets
@@ -61,5 +61,5 @@ tidy.set <- ddply(train.test.cd,.(Activity.Name,Subject),function(df) colMeans(d
 # write tidy dataset to working directory
 write.table(tidy.set,"tidy.txt",sep="\t",row.names=FALSE)
 
-# remove object no longer needed
+# remove objects no longer needed
 rm(list=c("activity.labels","features","col.names"))
