@@ -3,8 +3,13 @@ GettingAndCleaningData
 
 Getting and Cleaning Data Project
 
-Contents
---------
+Purpose
+-------
+
+The objective for this project is to prepare tidy data that can be used for later analysis
+
+Content
+-------
 
 run_analysis.R - Script to run the analysis for the project
 
