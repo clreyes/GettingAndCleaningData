@@ -58,7 +58,7 @@ train.test.cd$Subject <- factor(train.test.cd$Subject)
 # create second tidy data set with the average of each variable for each activity and subject
 tidy.set <- ddply(train.test.cd,.(Activity.Name,Subject),function(df) colMeans(df[,3:ncol(df)]))
 
-# write tidy dataset to working directory
+# write tidy dataset to working directory for submission
 write.table(tidy.set,"tidy.txt",sep="\t",row.names=FALSE)
 
 # remove objects no longer needed
