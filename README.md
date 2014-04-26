@@ -3,8 +3,8 @@ GettingAndCleaningData
 
 Getting and Cleaning Data Project
 
-Repo Contents
--------------
+Contents
+--------
 
 run_analysis.R - Script to run the analysis for the project
 
