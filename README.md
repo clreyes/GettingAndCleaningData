@@ -3,10 +3,7 @@ GettingAndCleaningData
 
 Getting and Cleaning Data Project
 
-Purpose
--------
-
-The objective for this project is to prepare tidy data that can be used for later analysis
+The goal is to prepare tidy data that can be used for later analysis
 
 Content
 -------
