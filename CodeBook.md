@@ -27,8 +27,8 @@ The following files will be read during the analysis (see Recipe below):
 - UCI HAR Dataset/test/y_test.txt
 - UCI HAR Dataset/test/subject_test.txt
 
-Recipe and Variables
---------------------
+Recipe
+------
 
 The script (run_analysis.R) uses the following recipe and variables to process the data 
 
@@ -67,7 +67,7 @@ The script (run_analysis.R) uses the following recipe and variables to process t
 
 - Using function <em>grep</em> find features with measurements of mean and standard deviation
 - Create a vector <em>"col.names"</em> with identified features in addition to subject and activity name columns
-- Reduce <em>train.test</em> dataset to <em>col.names</em> fields
+- Reduce <em>train.test</em> dataset with <em>col.names</em> fields to variable <em>train.test.rd</em>
 
 ### Step 6 - Create Tidy Dataset with Average of Selected Features for Each Activity and Subject
 
@@ -80,5 +80,9 @@ The script (run_analysis.R) uses the following recipe and variables to process t
 Objects
 -------
 
+### Project outcome (objects)
+- <em>train.test</em>
+- <em>train.test.rd</em>
+- <em>tidy.set</em>
 
 
