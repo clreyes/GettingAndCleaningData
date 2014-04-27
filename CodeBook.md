@@ -64,3 +64,7 @@ The script (run_analysis.R) uses the following recipe and variables to process t
 - Use <em>features</em> to name columns with features (measurements) of experiment
 
 ### Step 5 - Extract Measurements of Mean and Standard Deviation
+
+- Using function <em>grep</em> find features with measurements of mean and standard deviation
+- Create a vector <em>"col.names"</em> with identified features in addition to subject and activity name columns
+- Reduce <em>train.test</em> dataset to 
