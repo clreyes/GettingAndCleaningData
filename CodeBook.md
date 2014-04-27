@@ -32,6 +32,10 @@ Recipe and Variables
 
 The script (run_analysis.R) uses the following recipe and variables to process the data 
 
+### Step 0 - Required Package
+
+- Install and/or load package <em>plyr</em> used for split-apply-combine functions
+
 ### Step 1 - Load Training Set
 
 - <em>"train.x"</em> reads observations with 561 measurements for each training experiment
