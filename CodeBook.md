@@ -41,19 +41,26 @@ The script (run_analysis.R) uses the following recipe and variables to process t
 - <em>"train.x"</em> reads observations with 561 measurements for each training experiment
 - <em>"train.y"</em> reads the corresponding activity label for each training observation
 - <em>"train.subject"</em> loads a vector with an identifier of the subject who carried out the experiment
-- Variable <em>"train"</em> combines (by column) train.x, train.y, and train.subject to form the training set
+- Variable <em>"train"</em> combines (by column) <em>train.x</em>, <em>train.y</em>, and <em>train.subject</em> to form the training set
 
 ### Step 2 - Load Test Set
 
 - <em>"test.x"</em> reads observations with 561 measurements for each test experiment
 - <em>"test.y"</em> reads the corresponding activity label for each test observation
 - <em>"test.subject"</em> loads a vector with an identifier of the subject who carried out the experiment 
-- Variable <em>"test"</em> combines (by column) test.x, test.y, and test.subject to form the test set
+- Variable <em>"test"</em> combines (by column) <em>test.x</em>, <em>test.y</em>, and <em>test.subject</em> to form the test set
 
 
-### Step 3 - Append Training and Test Sets
+### Step 3 - Merge Training and Test Sets
 
-- <em>"train.test"</em> row combines both training and test sets
+- Variable <em>"train.test"</em> row combines the training and test sets
 
 
-### Step 4 - 
+### Step 4 - Load Activity Names and List of Features
+
+- <em>"activity.labels"</em> reads mappings of activity labels to activity names
+- <em>"features"</em> reads list of all features measured in experiments
+- Use <em>activity.labels</em> to append Activity Names to each record
+- Use <em>features</em> to name columns with features (measurements) of experiment
+
+### Step 5 - Extract Measurements of Mean and Standard Deviation
