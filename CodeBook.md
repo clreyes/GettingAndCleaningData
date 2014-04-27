@@ -73,3 +73,12 @@ The script (run_analysis.R) uses the following recipe and variables to process t
 
 - Using function <em>ddply</em> split the processed dataset by "Activity.Name" and "Subject" to compute the mean of each feature column representing measurements of mean and standard deviation
 - Store the combined result of <em>ddply</em> into variable <em>tidy.set</em>
+- Write results to working directory to file <em>"tidy.txt" for project submission
+
+#### Note: throughout the script, objects/variables no longer needed are removed from memory
+
+Objects
+-------
+
+
+
