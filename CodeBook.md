@@ -32,9 +32,9 @@ Recipe and Variables
 
 The script (run_analysis.R) uses the following recipe and variables to process the data 
 
-### Step 0 - Required Package
+### Step 0 - Required R Package
 
-- Install and/or load package <em>plyr</em> used for split-apply-combine functions
+- Install and/or load package <em>"plyr"</em> used for split-apply-combine functions
 
 ### Step 1 - Load Training Set
 
@@ -51,4 +51,9 @@ The script (run_analysis.R) uses the following recipe and variables to process t
 - Variable <em>"test"</em> combines (by column) test.x, test.y, and test.subject to form the test set
 
 
-### Step 3 - Load 
+### Step 3 - Append Training and Test Sets
+
+- <em>"train.test"</em> row combines both training and test sets
+
+
+### Step 4 - 
