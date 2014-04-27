@@ -60,11 +60,16 @@ The script (run_analysis.R) uses the following recipe and variables to process t
 
 - <em>"activity.labels"</em> reads mappings of activity labels to activity names
 - <em>"features"</em> reads list of all features measured in experiments
-- Use <em>activity.labels</em> to append Activity Names to each record
+- Use <em>activity.labels</em> to append descriptive Activity Names to each record
 - Use <em>features</em> to name columns with features (measurements) of experiment
 
 ### Step 5 - Extract Measurements of Mean and Standard Deviation
 
 - Using function <em>grep</em> find features with measurements of mean and standard deviation
 - Create a vector <em>"col.names"</em> with identified features in addition to subject and activity name columns
-- Reduce <em>train.test</em> dataset to 
+- Reduce <em>train.test</em> dataset to <em>col.names</em> fields
+
+### Step 6 - Create Tidy Dataset with Average of Selected Features for Each Activity and Subject
+
+- Using function <em>ddply</em> split the processed dataset by "Activity.Name" and "Subject" to compute the mean of each feature column representing measurements of mean and standard deviation
+- Store the combined result of <em>ddply</em> into variable <em>tidy.set</em>
